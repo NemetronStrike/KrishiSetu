@@ -1,0 +1,36 @@
+Electric Indigo=5E2BFF
+Neon Violet=C04CFD
+Turquoise=1DD3B0
+Green Yellow=A1FC22
+Jungle Green=42B36F
+Lavender Veil=F2D5F8
+Faded Copper=A77E58
+Azure Blue=007FFF
+Midnight Violet=210124
+Dark Amarnath=750D37
+Deep Saffron=FE910B
+Charcoal Blue=264653
+Papaya Whip=FFEFD3
+Yellow Green=A1C349
+Periwinkle=DCD6F7
+
+Model 1:
+ #2E7D32 (Deep Green)
+
+ #81C784 (Soft Green)
+
+ #F1F8E9 (Light Green Tint)
+
+ #263238 (Dark Charcoal)
+
+ #FFC107 (Amber)
+
+ Beige=E9EDC9
+
+ Evrgreen=18392B
+
+ Sage Green=73A942
+
+ Turf Green=1A7431
+ Medium Jungle=25A244
+ Green=3F7D20

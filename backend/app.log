@@ -1,0 +1,767 @@
+2026-01-13 18:45:28,155 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 18:49:28,354 - main - INFO - Processing image: Untitled.jpg for crop: rice from IP: 127.0.0.1
+2026-01-13 18:49:28,494 - main - INFO - Pest prediction: armyworm (confidence: 0.508)
+2026-01-13 18:49:28,839 - utils - ERROR - Error loading crop model from model\rice_disease_model.pth: Error(s) in loading state_dict for CropDiseaseClassifier:
+	size mismatch for model.classifier.1.weight: copying a param with shape torch.Size([2, 1536]) from checkpoint, the shape in current model is torch.Size([4, 1536]).
+	size mismatch for model.classifier.1.bias: copying a param with shape torch.Size([2]) from checkpoint, the shape in current model is torch.Size([4]).
+2026-01-13 18:49:28,853 - main - INFO - Final decision: pest - armyworm (0.508)
+2026-01-13 18:49:29,278 - utils - ERROR - Gemini API error (attempt 1): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 18:49:29,278 - utils - WARNING - All Gemini attempts failed for rice - armyworm, returning fallback
+2026-01-13 18:50:23,644 - main - INFO - Processing image: images.jpg for crop: rice from IP: 127.0.0.1
+2026-01-13 18:50:23,700 - main - INFO - Pest prediction: stemborer (confidence: 0.788)
+2026-01-13 18:50:24,004 - utils - ERROR - Error loading crop model from model\rice_disease_model.pth: Error(s) in loading state_dict for CropDiseaseClassifier:
+	size mismatch for model.classifier.1.weight: copying a param with shape torch.Size([2, 1536]) from checkpoint, the shape in current model is torch.Size([4, 1536]).
+	size mismatch for model.classifier.1.bias: copying a param with shape torch.Size([2]) from checkpoint, the shape in current model is torch.Size([4]).
+2026-01-13 18:50:24,010 - main - INFO - Final decision: pest - stemborer (0.788)
+2026-01-13 18:50:24,119 - utils - ERROR - Gemini API error (attempt 1): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 18:50:24,119 - utils - WARNING - All Gemini attempts failed for rice - stemborer, returning fallback
+2026-01-13 18:50:51,155 - main - INFO - Processing image: sugarcane.jpg for crop: rice from IP: 127.0.0.1
+2026-01-13 18:50:51,215 - main - INFO - Pest prediction: aphids (confidence: 0.549)
+2026-01-13 18:50:51,542 - utils - ERROR - Error loading crop model from model\rice_disease_model.pth: Error(s) in loading state_dict for CropDiseaseClassifier:
+	size mismatch for model.classifier.1.weight: copying a param with shape torch.Size([2, 1536]) from checkpoint, the shape in current model is torch.Size([4, 1536]).
+	size mismatch for model.classifier.1.bias: copying a param with shape torch.Size([2]) from checkpoint, the shape in current model is torch.Size([4]).
+2026-01-13 18:50:51,548 - main - INFO - Final decision: pest - aphids (0.549)
+2026-01-13 18:50:51,637 - utils - ERROR - Gemini API error (attempt 1): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 18:50:51,637 - utils - WARNING - All Gemini attempts failed for rice - aphids, returning fallback
+2026-01-13 18:50:56,651 - main - INFO - Processing image: sugarcane.jpg for crop: sugarcane from IP: 127.0.0.1
+2026-01-13 18:50:56,708 - main - INFO - Pest prediction: aphids (confidence: 0.549)
+2026-01-13 18:50:57,021 - utils - INFO - Successfully loaded crop model from model\sugarcane_disease_model.pth
+2026-01-13 18:50:57,105 - main - INFO - Disease prediction: Sugarcane___Bacterial_blight (confidence: 0.996)
+2026-01-13 18:50:57,105 - main - INFO - Final decision: disease - Sugarcane___Bacterial_blight (0.996)
+2026-01-13 18:50:57,200 - utils - ERROR - Gemini API error (attempt 1): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 18:50:57,200 - utils - WARNING - All Gemini attempts failed for sugarcane - Sugarcane___Bacterial_blight, returning fallback
+2026-01-13 18:51:43,931 - main - INFO - Processing image: wheat.jpg for crop: wheat from IP: 127.0.0.1
+2026-01-13 18:51:43,982 - main - INFO - Pest prediction: leafhoppers (confidence: 0.953)
+2026-01-13 18:51:44,303 - utils - ERROR - Error loading crop model from model\wheat_disease_model.pth: Error(s) in loading state_dict for CropDiseaseClassifier:
+	size mismatch for model.classifier.1.weight: copying a param with shape torch.Size([3, 1536]) from checkpoint, the shape in current model is torch.Size([4, 1536]).
+	size mismatch for model.classifier.1.bias: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([4]).
+2026-01-13 18:51:44,309 - main - INFO - Final decision: pest - leafhoppers (0.953)
+2026-01-13 18:51:44,399 - utils - ERROR - Gemini API error (attempt 1): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 18:51:44,399 - utils - WARNING - All Gemini attempts failed for wheat - leafhoppers, returning fallback
+2026-01-13 18:52:16,266 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 18:52:16,320 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 18:52:16,642 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 18:52:16,712 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 18:52:16,712 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 18:52:16,802 - utils - ERROR - Gemini API error (attempt 1): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 18:52:16,802 - utils - WARNING - All Gemini attempts failed for corn - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot, returning fallback
+2026-01-13 18:52:58,611 - main - INFO - Processing image: tomato.jpg for crop: tomato from IP: 127.0.0.1
+2026-01-13 18:52:58,659 - main - INFO - Pest prediction: aphids (confidence: 1.000)
+2026-01-13 18:52:58,985 - utils - INFO - Successfully loaded crop model from model\tomato_disease_model.pth
+2026-01-13 18:52:59,058 - main - INFO - Disease prediction: Tomato___Early_blight (confidence: 1.000)
+2026-01-13 18:52:59,058 - main - INFO - Final decision: disease - Tomato___Early_blight (1.000)
+2026-01-13 18:52:59,144 - utils - ERROR - Gemini API error (attempt 1): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 18:52:59,145 - utils - WARNING - All Gemini attempts failed for tomato - Tomato___Early_blight, returning fallback
+2026-01-13 18:53:32,820 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 18:53:32,869 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 18:53:32,945 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 18:53:32,945 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 18:53:33,040 - utils - ERROR - Gemini API error (attempt 1): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 18:53:33,040 - utils - WARNING - All Gemini attempts failed for corn - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot, returning fallback
+2026-01-13 18:54:33,295 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 18:54:54,406 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 18:55:39,221 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 18:55:43,149 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 18:55:43,212 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 18:55:43,529 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 18:55:43,619 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 18:55:43,619 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 18:55:43,620 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 18:55:43,620 - utils - INFO - Starting Gemini solution generation for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 18:55:43,620 - utils - INFO - Sending request to Gemini API with prompt length: 1408
+2026-01-13 18:55:43,620 - utils - INFO - Gemini API attempt 1/3
+2026-01-13 18:55:43,974 - utils - ERROR - Gemini API error (attempt 1): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 18:55:43,974 - utils - WARNING - All Gemini attempts failed for corn - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot, returning fallback
+2026-01-13 18:55:43,975 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-13 18:56:39,495 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 18:56:53,483 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 18:57:03,877 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 18:57:03,940 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 18:57:04,268 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 18:57:04,359 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 18:57:04,359 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 18:57:04,359 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 18:57:04,359 - utils - INFO - Starting Gemini solution generation for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 18:57:04,360 - utils - INFO - Sending request to Gemini API with prompt length: 1408
+2026-01-13 18:57:04,360 - utils - INFO - Gemini API attempt 1/3
+2026-01-13 18:57:04,730 - utils - ERROR - Gemini API error (attempt 1): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 18:57:04,730 - utils - WARNING - All Gemini attempts failed for corn - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot, returning fallback
+2026-01-13 18:57:04,730 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-13 18:57:43,949 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 18:58:41,257 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 18:59:01,852 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:00:07,243 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:00:19,781 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 19:00:19,845 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 19:00:20,174 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 19:00:20,266 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 19:00:20,266 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 19:00:20,266 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:00:20,267 - utils - INFO - Starting Gemini solution generation for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:00:20,267 - utils - INFO - Sending request to Gemini API with prompt length: 1266
+2026-01-13 19:00:20,267 - utils - INFO - Gemini API attempt 1/3
+2026-01-13 19:00:20,699 - utils - ERROR - Gemini API error (attempt 1): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:00:25,699 - utils - INFO - Gemini API attempt 2/3
+2026-01-13 19:00:26,228 - utils - ERROR - Gemini API error (attempt 2): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:00:31,229 - utils - INFO - Gemini API attempt 3/3
+2026-01-13 19:00:31,763 - utils - ERROR - Gemini API error (attempt 3): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash-latest is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:00:31,763 - utils - WARNING - All Gemini attempts failed for corn - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot, returning fallback
+2026-01-13 19:00:31,764 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-13 19:01:21,521 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:01:32,880 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:01:36,657 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 19:01:36,723 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 19:01:37,040 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 19:01:37,132 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 19:01:37,133 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 19:01:37,133 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:01:37,133 - utils - INFO - Starting Gemini solution generation for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:01:37,133 - utils - INFO - Sending request to Gemini API with prompt length: 1266
+2026-01-13 19:01:37,133 - utils - INFO - Gemini API attempt 1/3
+2026-01-13 19:01:37,737 - utils - ERROR - Gemini API error (attempt 1): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:01:42,738 - utils - INFO - Gemini API attempt 2/3
+2026-01-13 19:01:43,295 - utils - ERROR - Gemini API error (attempt 2): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:01:48,295 - utils - INFO - Gemini API attempt 3/3
+2026-01-13 19:01:48,707 - utils - ERROR - Gemini API error (attempt 3): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:01:48,707 - utils - WARNING - All Gemini attempts failed for corn - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot, returning fallback
+2026-01-13 19:01:48,708 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-13 19:02:01,592 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:02:14,121 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:02:24,359 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 19:02:24,427 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 19:02:24,733 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 19:02:24,817 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 19:02:24,818 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 19:02:24,818 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:02:24,818 - utils - INFO - Starting Gemini solution generation for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:02:24,818 - utils - INFO - Sending request to Gemini API with prompt length: 1266
+2026-01-13 19:02:24,818 - utils - INFO - Gemini API attempt 1/3
+2026-01-13 19:02:25,208 - utils - ERROR - Gemini API error (attempt 1): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:02:30,209 - utils - INFO - Gemini API attempt 2/3
+2026-01-13 19:02:30,636 - utils - ERROR - Gemini API error (attempt 2): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:02:35,637 - utils - INFO - Gemini API attempt 3/3
+2026-01-13 19:02:36,202 - utils - ERROR - Gemini API error (attempt 3): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-pro is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:02:36,202 - utils - WARNING - All Gemini attempts failed for corn - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot, returning fallback
+2026-01-13 19:02:36,203 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-13 19:05:36,155 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:05:58,078 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:06:17,502 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:06:19,416 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 19:06:19,478 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 19:06:19,788 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 19:06:19,885 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 19:06:19,886 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 19:06:19,886 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:06:19,886 - utils - INFO - Starting Gemini solution generation for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:06:19,886 - utils - INFO - Sending request to Gemini API with prompt length: 1266
+2026-01-13 19:06:19,886 - utils - INFO - Gemini API attempt 1/3
+2026-01-13 19:06:20,296 - utils - ERROR - Gemini API error (attempt 1): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.5-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:06:25,297 - utils - INFO - Gemini API attempt 2/3
+2026-01-13 19:06:25,666 - utils - ERROR - Gemini API error (attempt 2): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.5-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:06:30,666 - utils - INFO - Gemini API attempt 3/3
+2026-01-13 19:06:31,210 - utils - ERROR - Gemini API error (attempt 3): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-2.5-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:06:31,210 - utils - WARNING - All Gemini attempts failed for corn - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot, returning fallback
+2026-01-13 19:06:31,211 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-13 19:07:26,795 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:07:38,399 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:07:44,485 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 19:07:44,548 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 19:07:44,865 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 19:07:44,961 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 19:07:44,962 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 19:07:44,962 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:07:44,962 - utils - INFO - Starting Gemini solution generation for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:07:44,962 - utils - INFO - Sending request to Gemini API with prompt length: 1266
+2026-01-13 19:07:44,962 - utils - INFO - Gemini API attempt 1/3
+2026-01-13 19:07:45,558 - utils - ERROR - Gemini API error (attempt 1): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:07:50,558 - utils - INFO - Gemini API attempt 2/3
+2026-01-13 19:07:50,928 - utils - ERROR - Gemini API error (attempt 2): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:07:55,929 - utils - INFO - Gemini API attempt 3/3
+2026-01-13 19:07:56,296 - utils - ERROR - Gemini API error (attempt 3): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:07:56,296 - utils - WARNING - All Gemini attempts failed for corn - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot, returning fallback
+2026-01-13 19:07:56,297 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-13 19:09:08,906 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:09:13,800 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:09:18,587 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:09:18,589 - main - INFO - Pest model loaded successfully
+2026-01-13 19:09:47,813 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:09:47,815 - main - INFO - Pest model loaded successfully
+2026-01-13 19:09:54,309 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 19:09:54,376 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 19:09:54,701 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 19:09:54,702 - main - INFO - Loaded corn disease model successfully
+2026-01-13 19:09:54,788 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 19:09:54,789 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 19:09:54,789 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:09:54,789 - utils - INFO - Starting Gemini solution generation for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:09:54,789 - utils - INFO - Sending request to Gemini API with prompt length: 1266
+2026-01-13 19:09:54,789 - utils - INFO - Gemini API attempt 1/3
+2026-01-13 19:09:55,184 - utils - ERROR - Gemini API error (attempt 1): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:10:00,185 - utils - INFO - Gemini API attempt 2/3
+2026-01-13 19:10:00,737 - utils - ERROR - Gemini API error (attempt 2): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:10:05,738 - utils - INFO - Gemini API attempt 3/3
+2026-01-13 19:10:06,293 - utils - ERROR - Gemini API error (attempt 3): 404 - {
+  "error": {
+    "code": 404,
+    "message": "models/gemini-1.5-flash is not found for API version v1, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.",
+    "status": "NOT_FOUND"
+  }
+}
+
+2026-01-13 19:10:06,293 - utils - WARNING - All Gemini attempts failed for corn - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot, returning fallback
+2026-01-13 19:10:06,295 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-13 19:12:18,122 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:12:18,124 - main - INFO - Pest model loaded successfully
+2026-01-13 19:12:48,560 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:12:48,562 - main - INFO - Pest model loaded successfully
+2026-01-13 19:13:00,130 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 19:13:00,132 - main - INFO - Pest model loaded successfully
+2026-01-13 19:13:08,772 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 19:13:08,835 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 19:13:09,149 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 19:13:09,150 - main - INFO - Loaded corn disease model successfully
+2026-01-13 19:13:09,239 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 19:13:09,240 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 19:13:09,240 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:13:09,240 - utils - INFO - Starting Gemini solution generation for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 19:13:09,240 - utils - INFO - Sending request to Gemini SDK with prompt length: 1266
+2026-01-13 19:13:09,240 - utils - INFO - Gemini SDK attempt 1/3
+2026-01-13 19:13:09,450 - utils - ERROR - Gemini SDK error (attempt 1): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 19:13:14,451 - utils - INFO - Gemini SDK attempt 2/3
+2026-01-13 19:13:14,542 - utils - ERROR - Gemini SDK error (attempt 2): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 19:13:19,543 - utils - INFO - Gemini SDK attempt 3/3
+2026-01-13 19:13:19,633 - utils - ERROR - Gemini SDK error (attempt 3): 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2026-01-13 19:13:19,633 - utils - WARNING - All Gemini attempts failed for corn - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot, returning fallback
+2026-01-13 19:13:19,633 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-13 20:16:53,499 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 20:16:53,502 - main - INFO - Pest model loaded successfully
+2026-01-13 20:16:59,525 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 20:16:59,663 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 20:17:00,055 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 20:17:00,056 - main - INFO - Loaded corn disease model successfully
+2026-01-13 20:17:00,184 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 20:17:00,184 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 20:17:00,184 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 20:17:00,184 - utils - INFO - Generating Gemini solution for crop=corn, pest=Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 20:17:00,184 - utils - INFO - Gemini attempt 1/3
+2026-01-13 20:17:00,185 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-13 20:17:00,357 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-01-13 20:17:00,359 - utils - ERROR - Gemini error (attempt 1): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-13 20:17:03,360 - utils - INFO - Gemini attempt 2/3
+2026-01-13 20:17:03,360 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-13 20:17:03,451 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-01-13 20:17:03,452 - utils - ERROR - Gemini error (attempt 2): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-13 20:17:06,452 - utils - INFO - Gemini attempt 3/3
+2026-01-13 20:17:06,453 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-13 20:17:06,544 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent "HTTP/1.1 404 Not Found"
+2026-01-13 20:17:06,545 - utils - ERROR - Gemini error (attempt 3): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-13 20:17:09,545 - utils - WARNING - All Gemini attempts failed, using fallback
+2026-01-13 20:17:09,546 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-13 20:17:25,842 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 20:17:25,845 - main - INFO - Pest model loaded successfully
+2026-01-13 20:17:34,188 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 20:17:34,190 - main - INFO - Pest model loaded successfully
+2026-01-13 20:17:44,515 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 20:17:44,579 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 20:17:44,904 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 20:17:44,905 - main - INFO - Loaded corn disease model successfully
+2026-01-13 20:17:44,987 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 20:17:44,987 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 20:17:44,988 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 20:17:44,988 - utils - INFO - Generating Gemini solution for crop=corn, pest=Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 20:17:44,988 - utils - INFO - Gemini attempt 1/3
+2026-01-13 20:17:44,988 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-13 20:17:51,762 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-01-13 20:17:51,763 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-13 20:20:52,616 - utils - INFO - Successfully loaded pest model from model\pest_model_b0.pth
+2026-01-13 20:20:52,618 - main - INFO - Pest model loaded successfully
+2026-01-13 20:20:56,563 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 20:20:56,625 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 20:20:56,940 - utils - INFO - Successfully loaded crop model from model\corn_disease_model.pth
+2026-01-13 20:20:56,941 - main - INFO - Loaded corn disease model successfully
+2026-01-13 20:20:57,020 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 20:20:57,021 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 20:20:57,021 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 20:20:57,021 - utils - INFO - Generating Gemini solution for crop=corn, pest=Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 20:20:57,021 - main - ERROR - Failed to generate solution: Invalid format specifier ' "...",
+"occurrence": "...",
+"natural_remedies": [
+    "...",
+    "..."
+],
+"chemical_remedies": [
+    "...",
+    "..."
+],
+"additional_advice": "..."
+' for object of type 'str'
+2026-01-13 20:22:35,840 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-01-13 20:22:35,842 - main - INFO - Pest model loaded successfully
+2026-01-13 20:22:40,194 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-01-13 20:22:40,255 - main - INFO - Pest prediction: stemborer (confidence: 0.828)
+2026-01-13 20:22:40,560 - utils - INFO - Crop model loaded from model\corn_disease_model.pth
+2026-01-13 20:22:40,561 - main - INFO - Loaded corn disease model successfully
+2026-01-13 20:22:40,641 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974)
+2026-01-13 20:22:40,642 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.974)
+2026-01-13 20:22:40,642 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 20:22:40,642 - utils - INFO - Generating advisory for crop=corn, issue=Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-13 20:22:40,642 - utils - INFO - Gemini attempt 1/3
+2026-01-13 20:22:40,642 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-13 20:22:46,963 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-01-13 20:22:46,965 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-15 12:06:17,672 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-01-15 12:06:17,674 - main - INFO - Pest model loaded successfully
+2026-01-15 12:11:27,836 - main - INFO - Processing image: wheat.jpg for crop: wheat from IP: 127.0.0.1
+2026-01-15 12:11:27,965 - main - INFO - Pest prediction: leafhoppers (confidence: 0.953)
+2026-01-15 12:11:28,320 - utils - ERROR - Crop model loading error: Error(s) in loading state_dict for CropDiseaseClassifier:
+	size mismatch for model.classifier.1.weight: copying a param with shape torch.Size([3, 1536]) from checkpoint, the shape in current model is torch.Size([4, 1536]).
+	size mismatch for model.classifier.1.bias: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([4]).
+2026-01-15 12:11:28,338 - main - INFO - Final decision: pest - leafhoppers (0.953)
+2026-01-15 12:11:28,338 - main - INFO - Generating solution for crop: wheat, pest: leafhoppers
+2026-01-15 12:11:28,339 - utils - INFO - Generating advisory for crop=wheat, issue=leafhoppers
+2026-01-15 12:11:28,339 - utils - INFO - Gemini attempt 1/3
+2026-01-15 12:11:28,339 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-15 12:11:34,743 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-01-15 12:11:34,747 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-15 12:14:42,185 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-01-15 12:14:42,187 - main - INFO - Pest model loaded successfully
+2026-01-15 13:13:37,391 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-01-15 13:13:37,393 - main - INFO - Pest model loaded successfully
+2026-01-15 13:13:43,652 - main - INFO - Processing image: wheat.jpg for crop: wheat from IP: 127.0.0.1
+2026-01-15 13:13:43,831 - main - INFO - Pest prediction: leafhoppers (confidence: 0.957)
+2026-01-15 13:13:44,303 - utils - ERROR - Crop model loading error: Error(s) in loading state_dict for CropDiseaseClassifier:
+	size mismatch for model.classifier.1.weight: copying a param with shape torch.Size([3, 1536]) from checkpoint, the shape in current model is torch.Size([4, 1536]).
+	size mismatch for model.classifier.1.bias: copying a param with shape torch.Size([3]) from checkpoint, the shape in current model is torch.Size([4]).
+2026-01-15 13:13:44,325 - main - INFO - Final decision: pest - leafhoppers (0.957)
+2026-01-15 13:13:44,325 - main - INFO - Generating solution for crop: wheat, pest: leafhoppers
+2026-01-15 13:13:44,325 - utils - INFO - Generating advisory for crop=wheat, issue=leafhoppers
+2026-01-15 13:13:44,325 - utils - INFO - Gemini attempt 1/3
+2026-01-15 13:13:44,325 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-15 13:13:51,805 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-01-15 13:13:51,812 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-15 13:15:00,828 - main - INFO - Processing image: corn pest.jpg for crop: corn from IP: 127.0.0.1
+2026-01-15 13:15:00,874 - main - INFO - Pest prediction: aphids (confidence: 0.280)
+2026-01-15 13:15:01,255 - utils - INFO - Crop model loaded from model\corn_disease_model.pth
+2026-01-15 13:15:01,256 - main - INFO - Loaded corn disease model successfully
+2026-01-15 13:15:01,346 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.383)
+2026-01-15 13:15:01,346 - main - INFO - Final decision: disease - Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (0.383)
+2026-01-15 13:15:01,346 - main - INFO - Generating solution for crop: corn, pest: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-15 13:15:01,346 - utils - INFO - Generating advisory for crop=corn, issue=Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-01-15 13:15:01,347 - utils - INFO - Gemini attempt 1/3
+2026-01-15 13:15:01,347 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-01-15 13:15:07,704 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-01-15 13:15:07,705 - main - INFO - Solution generated successfully: <class 'dict'>
+2026-01-15 13:16:41,739 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-01-15 13:16:41,741 - main - INFO - Pest model loaded successfully
+2026-01-15 13:17:46,046 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-01-15 13:17:46,048 - main - INFO - Pest model loaded successfully
+2026-02-16 12:31:02,020 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-16 12:31:02,024 - main - INFO - Pest model loaded successfully
+2026-02-16 14:37:38,089 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-16 14:37:38,093 - main - INFO - Pest model loaded successfully
+2026-02-16 14:39:04,865 - main - INFO - Processing image: wheat.jpg for crop: wheat from IP: 127.0.0.1
+2026-02-16 14:39:05,029 - main - INFO - Pest prediction: leafhoppers (confidence: 0.953, uncertain: False)
+2026-02-16 14:39:05,565 - utils - INFO - Crop model loaded from model\wheat_disease_model.pth
+2026-02-16 14:39:05,567 - main - INFO - Loaded wheat disease model successfully
+2026-02-16 14:39:05,666 - main - INFO - Disease prediction: Wheat___Septoria (confidence: 0.607, uncertain: True)
+2026-02-16 14:39:05,666 - utils - INFO - Generating advisory for crop=wheat, issue=leafhoppers
+2026-02-16 14:39:05,667 - utils - INFO - Gemini attempt 1/3
+2026-02-16 14:39:05,667 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 14:39:37,662 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-16 14:39:37,669 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-16 14:39:37,669 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-16 14:39:37,670 - main - INFO - Final decision: pest with confidence 0.953
+2026-02-16 14:40:17,455 - main - INFO - Processing image: corn.jpg for crop: corn from IP: 127.0.0.1
+2026-02-16 14:40:17,499 - main - INFO - Pest prediction: stemborer (confidence: 0.828, uncertain: False)
+2026-02-16 14:40:17,996 - utils - INFO - Crop model loaded from model\corn_disease_model.pth
+2026-02-16 14:40:17,998 - main - INFO - Loaded corn disease model successfully
+2026-02-16 14:40:18,070 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.974, uncertain: False)
+2026-02-16 14:40:18,071 - utils - INFO - Generating advisory for crop=corn, issue=Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot
+2026-02-16 14:40:18,071 - utils - INFO - Gemini attempt 1/3
+2026-02-16 14:40:18,071 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 14:40:50,965 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-16 14:40:50,968 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-16 14:40:50,969 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-16 14:40:50,969 - main - INFO - Final decision: disease with confidence 0.974
+2026-02-16 14:41:38,961 - main - INFO - Processing image: corn pest.jpg for crop: corn from IP: 127.0.0.1
+2026-02-16 14:41:39,005 - main - INFO - Pest prediction: aphids (confidence: 0.279, uncertain: True)
+2026-02-16 14:41:39,084 - main - INFO - Disease prediction: Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot (confidence: 0.384, uncertain: True)
+2026-02-16 14:41:39,085 - main - INFO - Final decision: uncertain with confidence 0.000
+2026-02-16 14:44:44,663 - main - INFO - Processing image: sugarcane.jpg for crop: sugarcane from IP: 127.0.0.1
+2026-02-16 14:44:44,707 - main - INFO - Pest prediction: aphids (confidence: 0.549, uncertain: True)
+2026-02-16 14:44:45,212 - utils - INFO - Crop model loaded from model\sugarcane_disease_model.pth
+2026-02-16 14:44:45,214 - main - INFO - Loaded sugarcane disease model successfully
+2026-02-16 14:44:45,289 - main - INFO - Disease prediction: Sugarcane___Bacterial_blight (confidence: 0.996, uncertain: False)
+2026-02-16 14:44:45,290 - utils - INFO - Generating advisory for crop=sugarcane, issue=Sugarcane___Bacterial_blight
+2026-02-16 14:44:45,290 - utils - INFO - Gemini attempt 1/3
+2026-02-16 14:44:45,290 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 14:45:13,089 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-16 14:45:13,091 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-16 14:45:13,092 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-16 14:45:13,092 - main - INFO - Final decision: disease with confidence 0.996
+2026-02-16 14:48:44,315 - main - INFO - Processing image: sugarcane.jpg for crop: sugarcane from IP: 127.0.0.1
+2026-02-16 14:48:44,358 - main - INFO - Pest prediction: aphids (confidence: 0.549, uncertain: True)
+2026-02-16 14:48:44,432 - main - INFO - Disease prediction: Sugarcane___Bacterial_blight (confidence: 0.996, uncertain: False)
+2026-02-16 14:48:44,432 - utils - INFO - Generating advisory for crop=sugarcane, issue=Sugarcane___Bacterial_blight
+2026-02-16 14:48:44,432 - utils - INFO - Gemini attempt 1/3
+2026-02-16 14:48:44,433 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 14:49:11,488 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-16 14:49:11,491 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-16 14:49:11,491 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-16 14:49:11,492 - main - INFO - Final decision: disease with confidence 0.996
+2026-02-16 15:00:12,395 - main - INFO - Processing image: wheat.jpg for crop: wheat from IP: 127.0.0.1
+2026-02-16 15:00:12,438 - main - INFO - Pest prediction: leafhoppers (confidence: 0.953, uncertain: False)
+2026-02-16 15:00:12,514 - main - INFO - Disease prediction: Wheat___Septoria (confidence: 0.607, uncertain: True)
+2026-02-16 15:00:12,515 - utils - INFO - Generating advisory for crop=wheat, issue=leafhoppers
+2026-02-16 15:00:12,516 - utils - INFO - Gemini attempt 1/3
+2026-02-16 15:00:12,516 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 15:00:53,813 - utils - ERROR - Gemini error (attempt 1): Server disconnected without sending a response.
+2026-02-16 15:00:56,814 - utils - INFO - Gemini attempt 2/3
+2026-02-16 15:00:56,814 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 15:01:33,120 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-16 15:01:33,122 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-16 15:01:33,122 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-16 15:01:33,123 - main - INFO - Final decision: pest with confidence 0.953
+2026-02-16 15:13:24,259 - main - INFO - Processing image: wheat.jpg for crop: wheat from IP: 127.0.0.1
+2026-02-16 15:13:24,304 - main - INFO - Pest prediction: leafhoppers (confidence: 0.953, uncertain: False)
+2026-02-16 15:13:24,379 - main - INFO - Disease prediction: Wheat___Septoria (confidence: 0.607, uncertain: True)
+2026-02-16 15:13:24,380 - utils - INFO - Generating advisory for crop=wheat, issue=leafhoppers
+2026-02-16 15:13:24,380 - utils - INFO - Gemini attempt 1/3
+2026-02-16 15:13:24,381 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 15:14:00,733 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-16 15:14:00,735 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-16 15:14:00,735 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-16 15:14:00,736 - main - INFO - Final decision: pest with confidence 0.953
+2026-02-16 15:14:10,433 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-16 15:14:10,436 - main - INFO - Pest model loaded successfully
+2026-02-16 15:14:17,791 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-16 15:14:17,794 - main - INFO - Pest model loaded successfully
+2026-02-16 15:18:54,109 - main - INFO - Processing image: wheat.jpg for crop: wheat from IP: 127.0.0.1
+2026-02-16 15:18:54,186 - main - INFO - Pest prediction: leafhoppers (confidence: 0.953, uncertain: False)
+2026-02-16 15:18:54,656 - utils - INFO - Crop model loaded from model\wheat_disease_model.pth
+2026-02-16 15:18:54,657 - main - INFO - Loaded wheat disease model successfully
+2026-02-16 15:18:54,735 - main - INFO - Disease prediction: Wheat___Septoria (confidence: 0.607, uncertain: True)
+2026-02-16 15:18:54,735 - utils - INFO - Generating advisory for crop=wheat, issue=leafhoppers
+2026-02-16 15:18:54,736 - utils - INFO - Gemini attempt 1/3
+2026-02-16 15:18:54,736 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 15:19:28,694 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-16 15:19:28,697 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-16 15:19:28,697 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-16 15:19:28,698 - main - INFO - Final decision: pest with confidence 0.953
+2026-02-16 15:26:00,685 - main - INFO - Processing image: healthy_rice.jpg for crop: wheat from IP: 127.0.0.1
+2026-02-16 15:26:00,728 - main - INFO - Pest prediction: leafhoppers (confidence: 0.960, uncertain: False)
+2026-02-16 15:26:00,803 - main - INFO - Disease prediction: Wheat___Septoria (confidence: 0.720, uncertain: False)
+2026-02-16 15:26:00,804 - utils - INFO - Generating advisory for crop=wheat, issue=leafhoppers
+2026-02-16 15:26:00,804 - utils - INFO - Gemini attempt 1/3
+2026-02-16 15:26:00,804 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 15:26:12,862 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-16 15:26:12,864 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-16 15:26:12,864 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-16 15:26:12,865 - main - INFO - Final decision: pest with confidence 0.960
+2026-02-16 15:26:21,771 - main - INFO - Processing image: healthy_rice.jpg for crop: rice from IP: 127.0.0.1
+2026-02-16 15:26:21,814 - main - INFO - Pest prediction: leafhoppers (confidence: 0.960, uncertain: False)
+2026-02-16 15:26:22,253 - utils - ERROR - Crop model loading error: Error(s) in loading state_dict for CropDiseaseClassifier:
+	size mismatch for model.classifier.1.weight: copying a param with shape torch.Size([2, 1536]) from checkpoint, the shape in current model is torch.Size([4, 1536]).
+	size mismatch for model.classifier.1.bias: copying a param with shape torch.Size([2]) from checkpoint, the shape in current model is torch.Size([4]).
+2026-02-16 15:26:22,283 - utils - INFO - Generating advisory for crop=rice, issue=leafhoppers
+2026-02-16 15:26:22,284 - utils - INFO - Gemini attempt 1/3
+2026-02-16 15:26:22,284 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 15:26:50,606 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-16 15:26:50,608 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-16 15:26:50,608 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-16 15:29:53,306 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-16 15:29:53,309 - main - INFO - Pest model loaded successfully
+2026-02-16 15:29:57,255 - main - INFO - Uploaded image dimensions: 6000x4000
+2026-02-16 15:29:57,479 - main - INFO - Processing image: loh(8).JPG for crop: wheat from IP: 127.0.0.1
+2026-02-16 15:29:57,628 - main - INFO - Pest prediction: armyworm (confidence: 0.637, uncertain: True)
+2026-02-16 15:29:58,046 - utils - INFO - Crop model loaded from model\wheat_disease_model.pth
+2026-02-16 15:29:58,047 - main - INFO - Loaded wheat disease model successfully
+2026-02-16 15:29:58,235 - main - INFO - Disease prediction: Wheat___healthy (confidence: 0.953, uncertain: False)
+2026-02-16 15:29:58,235 - utils - INFO - Generating advisory for crop=wheat, issue=armyworm
+2026-02-16 15:29:58,236 - utils - INFO - Gemini attempt 1/3
+2026-02-16 15:29:58,236 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 15:30:34,273 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-16 15:30:34,280 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-16 15:30:34,281 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-16 15:30:34,281 - main - INFO - Final decision: pest with confidence 0.637
+2026-02-16 19:34:16,325 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-16 19:34:16,327 - main - INFO - Pest model loaded successfully
+2026-02-16 19:34:35,068 - main - INFO - Uploaded image dimensions: 6000x4000
+2026-02-16 19:34:35,222 - main - INFO - Processing image: loh(1).JPG for crop: wheat from IP: 127.0.0.1
+2026-02-16 19:34:35,370 - main - INFO - Pest prediction: armyworm (confidence: 0.874, uncertain: False)
+2026-02-16 19:34:35,691 - utils - INFO - Crop model loaded from model\wheat_disease_model.pth
+2026-02-16 19:34:35,692 - main - INFO - Loaded wheat disease model successfully
+2026-02-16 19:34:35,793 - main - INFO - Disease prediction: Wheat___Septoria (confidence: 0.683, uncertain: True)
+2026-02-16 19:34:35,794 - utils - INFO - Generating advisory for crop=wheat, issue=armyworm
+2026-02-16 19:34:35,794 - utils - INFO - Gemini attempt 1/3
+2026-02-16 19:34:35,794 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 19:35:25,986 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-02-16 19:35:25,988 - utils - ERROR - Gemini error (attempt 1): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-02-16 19:35:28,988 - utils - INFO - Gemini attempt 2/3
+2026-02-16 19:35:28,989 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 19:36:32,062 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-02-16 19:36:32,063 - utils - ERROR - Gemini error (attempt 2): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-02-16 19:36:35,063 - utils - INFO - Gemini attempt 3/3
+2026-02-16 19:36:35,064 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-16 19:37:26,142 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-02-16 19:37:26,143 - utils - ERROR - Gemini error (attempt 3): 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-02-16 19:37:29,144 - utils - WARNING - Gemini failed, using fallback
+2026-02-16 19:37:29,144 - main - INFO - Final decision: pest with confidence 0.874
+2026-02-16 19:39:14,746 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-16 19:39:14,748 - main - INFO - Pest model loaded successfully
+2026-02-16 19:39:20,424 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-16 19:39:20,426 - main - INFO - Pest model loaded successfully
+2026-02-16 19:40:14,631 - main - INFO - Uploaded image dimensions: 6000x4000
+2026-02-16 19:40:14,779 - main - INFO - Processing image: loh(1).JPG for crop: wheat from IP: 127.0.0.1
+2026-02-16 19:40:14,870 - main - INFO - Pest prediction: stemborer (confidence: 0.889, uncertain: False)
+2026-02-16 19:40:15,166 - utils - INFO - Crop model loaded from model\wheat_disease_model.pth
+2026-02-16 19:40:15,167 - main - INFO - Loaded wheat disease model successfully
+2026-02-16 19:40:15,282 - main - INFO - Disease prediction: Wheat___Septoria (confidence: 0.583, uncertain: True)
+2026-02-16 19:40:15,282 - utils - INFO - Generating advisory for crop=wheat, issue=stemborer
+2026-02-16 19:40:15,283 - utils - INFO - Gemini attempt 1/3
+2026-02-16 19:40:15,283 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 09:38:51,275 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-18 09:38:51,277 - main - INFO - Pest model loaded successfully
+2026-02-18 09:39:18,160 - main - INFO - Uploaded image dimensions: 6000x4000
+2026-02-18 09:39:18,301 - main - INFO - Processing image: loh(1).JPG for crop: rice from IP: 127.0.0.1
+2026-02-18 09:39:18,469 - main - INFO - Pest prediction: armyworm (confidence: 0.771, uncertain: False)
+2026-02-18 09:39:18,810 - utils - INFO - Crop model loaded from model\rice_healthy_model.pth
+2026-02-18 09:39:18,810 - main - INFO - Loaded rice healthy model successfully
+2026-02-18 09:39:18,921 - main - INFO - Healthy check: Healthy (confidence: 0.640)
+2026-02-18 09:39:19,243 - utils - INFO - Crop model loaded from model\rice_disease_model.pth
+2026-02-18 09:39:19,244 - main - INFO - Loaded rice disease model successfully
+2026-02-18 09:39:19,340 - main - INFO - Disease prediction: Rice___Brown_spot (confidence: 0.682, uncertain: True)
+2026-02-18 09:39:19,340 - utils - INFO - Generating advisory for crop=rice, issue=armyworm
+2026-02-18 09:39:19,340 - utils - INFO - Gemini attempt 1/3
+2026-02-18 09:39:19,340 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 09:39:27,524 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-18 09:39:27,531 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-18 09:39:27,532 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-18 09:39:27,532 - main - INFO - Final decision: pest with confidence 0.771
+2026-02-18 09:41:56,498 - main - INFO - Uploaded image dimensions: 6000x4000
+2026-02-18 09:41:56,667 - main - INFO - Processing image: loh(1).JPG for crop: rice from IP: 127.0.0.1
+2026-02-18 09:41:56,750 - main - INFO - Pest prediction: armyworm (confidence: 0.997, uncertain: False)
+2026-02-18 09:41:56,848 - main - INFO - Healthy check: Healthy (confidence: 0.919)
+2026-02-18 09:41:56,941 - main - INFO - Disease prediction: Rice___healthy (confidence: 0.599, uncertain: True)
+2026-02-18 09:42:03,951 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-18 09:42:03,954 - main - INFO - Pest model loaded successfully
+2026-02-18 09:42:09,428 - main - INFO - Uploaded image dimensions: 6000x4000
+2026-02-18 09:42:09,580 - main - INFO - Processing image: loh(1).JPG for crop: wheat from IP: 127.0.0.1
+2026-02-18 09:42:09,670 - main - INFO - Pest prediction: aphids (confidence: 0.285, uncertain: True)
+2026-02-18 09:42:09,991 - utils - INFO - Crop model loaded from model\wheat_healthy_model.pth
+2026-02-18 09:42:09,992 - main - INFO - Loaded wheat healthy model successfully
+2026-02-18 09:42:10,100 - main - INFO - Healthy check: Healthy (confidence: 0.851)
+2026-02-18 09:42:10,421 - utils - INFO - Crop model loaded from model\wheat_disease_model.pth
+2026-02-18 09:42:10,422 - main - INFO - Loaded wheat disease model successfully
+2026-02-18 09:42:10,518 - main - INFO - Disease prediction: Wheat___Brown_rust (confidence: 0.937, uncertain: False)
+2026-02-18 09:42:31,278 - main - INFO - Uploaded image dimensions: 6000x4000
+2026-02-18 09:42:31,434 - main - INFO - Processing image: lolr(33).JPG for crop: wheat from IP: 127.0.0.1
+2026-02-18 09:42:31,521 - main - INFO - Pest prediction: stemborer (confidence: 0.967, uncertain: False)
+2026-02-18 09:42:31,621 - main - INFO - Healthy check: Not Healthy (confidence: 0.960)
+2026-02-18 09:42:31,715 - main - INFO - Disease prediction: Wheat___healthy (confidence: 0.991, uncertain: False)
+2026-02-18 09:42:31,715 - utils - INFO - Generating advisory for crop=wheat, issue=stemborer
+2026-02-18 09:42:31,716 - utils - INFO - Gemini attempt 1/3
+2026-02-18 09:42:31,716 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 09:42:41,527 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-18 09:42:41,528 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-18 09:42:41,529 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-18 09:42:41,529 - main - INFO - Final decision: pest with confidence 0.967
+2026-02-18 09:46:18,334 - main - INFO - Uploaded image dimensions: 6000x4000
+2026-02-18 09:46:18,507 - main - INFO - Processing image: lolr(33).JPG for crop: wheat from IP: 127.0.0.1
+2026-02-18 09:46:18,589 - main - INFO - Pest prediction: stemborer (confidence: 0.997, uncertain: False)
+2026-02-18 09:46:18,692 - main - INFO - Healthy check: Not Healthy (confidence: 0.966)
+2026-02-18 09:46:18,792 - main - INFO - Disease prediction: Wheat___healthy (confidence: 0.970, uncertain: False)
+2026-02-18 09:46:18,793 - utils - INFO - Generating advisory for crop=wheat, issue=stemborer
+2026-02-18 09:46:18,793 - utils - INFO - Gemini attempt 1/3
+2026-02-18 09:46:18,793 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 09:46:26,045 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-18 09:46:26,046 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-18 09:46:26,046 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-18 09:46:26,046 - main - INFO - Final decision: pest with confidence 0.997
+2026-02-18 09:46:32,843 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-18 09:46:32,846 - main - INFO - Pest model loaded successfully
+2026-02-18 09:50:21,581 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-18 09:50:21,583 - main - INFO - Pest model loaded successfully
+2026-02-18 09:50:28,546 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-18 09:50:28,548 - main - INFO - Pest model loaded successfully
+2026-02-18 09:50:40,453 - utils - INFO - Pest model loaded from model\pest_model_b0.pth
+2026-02-18 09:50:40,455 - main - INFO - Pest model loaded successfully
+2026-02-18 09:50:51,010 - main - INFO - Uploaded image dimensions: 1947x1912
+2026-02-18 09:50:51,023 - main - INFO - Processing image: lolr(1).JPG for crop: wheat from IP: 127.0.0.1
+2026-02-18 09:50:51,121 - main - INFO - Pest prediction: cutworm (confidence: 0.999, uncertain: False)
+2026-02-18 09:50:51,444 - utils - INFO - Crop model loaded from model\wheat_healthy_model.pth
+2026-02-18 09:50:51,445 - main - INFO - Loaded wheat healthy model successfully
+2026-02-18 09:50:51,504 - main - INFO - Healthy check: Not Healthy (confidence: 0.857)
+2026-02-18 09:50:51,811 - utils - INFO - Crop model loaded from model\wheat_disease_model.pth
+2026-02-18 09:50:51,812 - main - INFO - Loaded wheat disease model successfully
+2026-02-18 09:50:51,862 - main - INFO - Disease prediction: stripe_rust (confidence: 0.769, uncertain: False)
+2026-02-18 09:50:51,863 - utils - INFO - Generating advisory for crop=wheat, issue=stripe_rust
+2026-02-18 09:50:51,863 - utils - INFO - Gemini attempt 1/3
+2026-02-18 09:50:51,863 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 09:51:03,816 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-18 09:51:03,817 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-18 09:51:03,818 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-18 09:51:03,818 - main - INFO - Final decision: disease with confidence 0.769
+2026-02-18 09:58:26,182 - main - INFO - Uploaded image dimensions: 1449x1449
+2026-02-18 09:58:26,207 - main - INFO - Processing image: IMG_20190419_103257.jpg for crop: rice from IP: 127.0.0.1
+2026-02-18 09:58:26,248 - main - INFO - Pest prediction: cutworm (confidence: 0.999, uncertain: False)
+2026-02-18 09:58:26,568 - utils - INFO - Crop model loaded from model\rice_healthy_model.pth
+2026-02-18 09:58:26,569 - main - INFO - Loaded rice healthy model successfully
+2026-02-18 09:58:26,614 - main - INFO - Healthy check: Not Healthy (confidence: 1.000)
+2026-02-18 09:58:26,932 - utils - INFO - Crop model loaded from model\rice_disease_model.pth
+2026-02-18 09:58:26,933 - main - INFO - Loaded rice disease model successfully
+2026-02-18 09:58:26,978 - main - INFO - Disease prediction: LeafBlast (confidence: 0.975, uncertain: False)
+2026-02-18 09:58:26,979 - utils - INFO - Generating advisory for crop=rice, issue=LeafBlast
+2026-02-18 09:58:26,979 - utils - INFO - Gemini attempt 1/3
+2026-02-18 09:58:26,979 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 09:58:47,492 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-18 09:58:47,494 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-18 09:58:47,494 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-18 09:58:47,494 - main - INFO - Final decision: disease with confidence 0.975
+2026-02-18 10:00:30,675 - main - INFO - Uploaded image dimensions: 1742x1742
+2026-02-18 10:00:30,720 - main - INFO - Processing image: IMG_20190419_110501.jpg for crop: rice from IP: 127.0.0.1
+2026-02-18 10:00:30,775 - main - INFO - Pest prediction: cutworm (confidence: 0.356, uncertain: True)
+2026-02-18 10:00:30,830 - main - INFO - Healthy check: Not Healthy (confidence: 1.000)
+2026-02-18 10:00:30,882 - main - INFO - Disease prediction: LeafBlast (confidence: 0.995, uncertain: False)
+2026-02-18 10:00:30,882 - utils - INFO - Generating advisory for crop=rice, issue=LeafBlast
+2026-02-18 10:00:30,883 - utils - INFO - Gemini attempt 1/3
+2026-02-18 10:00:30,883 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 10:00:49,282 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-18 10:00:49,283 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-18 10:00:49,284 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-18 10:00:49,284 - main - INFO - Final decision: disease with confidence 0.995
+2026-02-18 10:01:18,300 - main - INFO - Uploaded image dimensions: 780x1040
+2026-02-18 10:01:18,308 - main - INFO - Processing image: rust (3).jpeg for crop: sugarcane from IP: 127.0.0.1
+2026-02-18 10:01:18,340 - main - INFO - Pest prediction: stemborer (confidence: 0.999, uncertain: False)
+2026-02-18 10:01:18,701 - utils - INFO - Crop model loaded from model\sugarcane_healthy_model.pth
+2026-02-18 10:01:18,702 - main - INFO - Loaded sugarcane healthy model successfully
+2026-02-18 10:01:18,748 - main - INFO - Healthy check: Not Healthy (confidence: 1.000)
+2026-02-18 10:01:19,075 - utils - INFO - Crop model loaded from model\sugarcane_disease_model.pth
+2026-02-18 10:01:19,076 - main - INFO - Loaded sugarcane disease model successfully
+2026-02-18 10:01:19,120 - main - INFO - Disease prediction: Rust (confidence: 1.000, uncertain: False)
+2026-02-18 10:01:19,120 - utils - INFO - Generating advisory for crop=sugarcane, issue=Rust
+2026-02-18 10:01:19,120 - utils - INFO - Gemini attempt 1/3
+2026-02-18 10:01:19,120 - google_genai.models - INFO - AFC is enabled with max remote calls: 10.
+2026-02-18 10:01:26,048 - httpx - INFO - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-02-18 10:01:26,049 - google_genai.models - INFO - AFC remote call 1 is done.
+2026-02-18 10:01:26,049 - google_genai.types - WARNING - Warning: there are non-text parts in the response: ['thought_signature'], returning concatenated text result from text parts. Check the full candidates.content.parts accessor to get the full model response.
+2026-02-18 10:01:26,049 - main - INFO - Final decision: disease with confidence 1.000

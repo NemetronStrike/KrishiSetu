@@ -1,0 +1,39 @@
+# KRISHISETU - RUN COMMANDS
+
+## SETUP
+conda create -n krishisetu python=3.9 -y
+conda activate krishisetu
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+pip install -r requirements.txt
+
+## TRAIN MODELS
+cd training
+python train_new.py --step healthy --crop Rice
+python train_new.py --step disease --crop Rice
+python train_new.py --step healthy --crop Wheat
+python train_new.py --step disease --crop Wheat
+python train_new.py --step healthy --crop Corn
+python train_new.py --step disease --crop Corn
+python train_new.py --step healthy --crop Cotton
+python train_new.py --step disease --crop Cotton
+python train_new.py --step healthy --crop Sugarcane
+python train_new.py --step disease --crop Sugarcane
+python train_new.py --step healthy --crop Potato
+python train_new.py --step disease --crop Potato
+python train_new.py --step healthy --crop Tomato
+python train_new.py --step disease --crop Tomato
+
+## RUN
+# Terminal 1:
+cd backend
+source activate krishisetu
+python -m uvicorn main:app --reload
+
+# Terminal 2:
+cd frontend
+npm install
+npm start
+
+## ACCESS
+http://localhost:3000
+http://localhost:8000/docs
